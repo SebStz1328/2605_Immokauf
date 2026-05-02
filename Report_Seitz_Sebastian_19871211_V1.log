@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 16:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1128,14 +1128,20 @@ Package hyperref Info: Link coloring ON on input line 54.
 \openout2 = `01_PreAmb/01_Titelseite.aux'.
 
  (01_PreAmb/01_Titelseite.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--8
+<98_Pictures/Original Logo.png, id=43, 327.1422pt x 257.0403pt>
+File: 98_Pictures/Original Logo.png Graphic file (type png)
+<use 98_Pictures/Original Logo.png>
+Package pdftex.def Info: 98_Pictures/Original Logo.png  used on input line 4.
+(pdftex.def)             Requested size: 199.16928pt x 156.48842pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
 (C:\Users\sebse\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd) (C:\Users\sebse\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd) (C:\Users\sebse\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd) (C:\Users\sebse\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd) (C:\Users\sebse\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd) (C:\Users\sebse\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg) (C:\Users\sebse\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd) (C:\Users\sebse\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg) [1
 
 
-{C:/Users/sebse/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]) (Report_Seitz_Sebastian_19871211_V1.toc
+{C:/Users/sebse/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./98_Pictures/Original Logo.png>]) (Report_Seitz_Sebastian_19871211_V1.toc
 Overfull \hbox (0.36496pt too wide) detected at line 10
  []\T1/lmr/m/n/10.95 A-1
  []
@@ -1159,10 +1165,7 @@ Overfull \hbox (0.36496pt too wide) detected at line 13
 \tf@toc=\write5
 \openout5 = `Report_Seitz_Sebastian_19871211_V1.toc'.
 
- [2
-
-
-] (Report_Seitz_Sebastian_19871211_V1.lof
+ (Report_Seitz_Sebastian_19871211_V1.lof
 Overfull \hbox (0.36496pt too wide) detected at line 2
  []\T1/lmr/m/n/10.95 A-4
  []
@@ -1171,33 +1174,28 @@ Overfull \hbox (0.36496pt too wide) detected at line 2
 \tf@lof=\write6
 \openout6 = `Report_Seitz_Sebastian_19871211_V1.lof'.
 
- [3
-
-] (Report_Seitz_Sebastian_19871211_V1.lot
+ (Report_Seitz_Sebastian_19871211_V1.lot
 Overfull \hbox (0.36496pt too wide) detected at line 2
  []\T1/lmr/m/n/10.95 A-2
  []
 
 
 Overfull \hbox (0.36496pt too wide) detected at line 3
- []\T1/lmr/m/n/10.95 A-5
+ []\T1/lmr/m/n/10.95 A-6
  []
 
 )
 \tf@lot=\write7
 \openout7 = `Report_Seitz_Sebastian_19871211_V1.lot'.
 
- [4
+ [2
+
 
 ] (01_PreAmb/03_02_HeaderFooter2.tex) (02_ManagementZusammenfassung/02_01_Ausgangssituation.tex
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9.
  (C:\Users\sebse\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (02_ManagementZusammenfassung/02_02_Liegenschaften.tex) (02_ManagementZusammenfassung/02_03_Projekte.tex [1{C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]) (02_ManagementZusammenfassung/02_04_NeuesProjekt.tex [2]
-
-LaTeX Warning: Reference `tab:' on page 3 undefined on input line 19.
-
-) [3] (01_PreAmb/03_01_HeaderFooter.tex)
+)) (02_ManagementZusammenfassung/02_02_Liegenschaften.tex) (02_ManagementZusammenfassung/02_03_Projekte.tex [1{C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]) (02_ManagementZusammenfassung/02_04_NeuesProjekt.tex [2] (92_Tabellen/TilgungsplanParameter.tex) [3]) [4{C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] (01_PreAmb/03_01_HeaderFooter.tex)
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 126.
@@ -1220,7 +1218,7 @@ l.139 ]
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={general}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 148.
 
 [3] (90_Anhang/91_Grafikenanhang.tex
-<98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf, id=111, page=1, 597.23125pt x 845.1575pt>
+<98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf, id=121, page=1, 597.23125pt x 845.1575pt>
 File: 98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf Graphic file (type pdf)
 <use 98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf, page 1>
 Package pdftex.def Info: 98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf , page1 used on input line 3.
@@ -1236,25 +1234,21 @@ l.88 \end{longtable}
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `Report_Seitz_Sebastian_19871211_V1.out' has not changed.
 (rerunfilecheck)             Checksum: 4364EC999C03197665FAF48EEC7DD8EB;1375.
  ) 
 Here is how much of TeX's memory you used:
- 42740 strings out of 467871
- 900781 string characters out of 5418383
- 1641720 words of memory out of 5000000
- 70797 multiletter control sequences out of 15000+600000
- 677143 words of font info for 120 fonts, out of 8000000 for 9000
+ 42785 strings out of 467871
+ 901826 string characters out of 5418383
+ 1640720 words of memory out of 5000000
+ 70822 multiletter control sequences out of 15000+600000
+ 677558 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,124p,2637b,1268s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb>
-Output written on Report_Seitz_Sebastian_19871211_V1.pdf (13 pages, 250968 bytes).
+<C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb>
+Output written on Report_Seitz_Sebastian_19871211_V1.pdf (12 pages, 281781 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 28758 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 28763 words of extra memory for PDF output out of 29859 (max. 10000000)
 

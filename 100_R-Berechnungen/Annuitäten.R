@@ -46,15 +46,14 @@ format_de <- function(x) {
 }
 
 
-ggplot(plan_long, aes(x = Monate, y = Betrag, fill = Typ)) +
-  geom_col(position = "stack", width = 0.7) +
-  scale_y_continuous(labels = label_dollar(prefix = "€", big.mark = ".")) +
-  scale_fill_manual(values = c("#2c3e50", "#e74c3c")) + # Edle Farben
-  theme_minimal() +
-  labs(title = "Annuitätentilgung: Zins vs. Tilgung",
-       subtitle = paste("Monatliche Rate:", round(annuitaet, 2), "€"),
-       x = "Monate", y = "Betrag in Euro")
-
+# ggplot(plan_long, aes(x = Monate, y = Betrag, fill = Typ)) +
+#   geom_col(position = "stack", width = 0.7) +
+#   scale_y_continuous(labels = label_dollar(prefix = "€", big.mark = ".")) +
+#   scale_fill_manual(values = c("#2c3e50", "#e74c3c")) + # Edle Farben
+#   theme_minimal() +
+#   labs(title = "Annuitätentilgung: Zins vs. Tilgung",
+#        subtitle = paste("Monatliche Rate:", round(annuitaet, 2), "€"),
+#        x = "Monate", y = "Betrag in Euro")
 
 
 plan %>%
@@ -79,13 +78,28 @@ tabelle_tex <- plan %>%
   kable_styling(latex_options = c(
     "striped", 
     "repeat_header"            # Wiederholt den Header auf der neuen Seite bei Longtables
-  ))
+  ), repeat_header_text = "\\textit{(Fortsetzung)}")
 
-# Caption ans Ende der Tabelle verschieben (vor \end{longtable})
-tabelle_tex_str <- sub(
-  "\\\\end\\{longtable\\}",
-  "\\\\caption{Detaillierter Tilgungsplan (Werte in Euro)}\n\\\\end{longtable}",
-  as.character(tabelle_tex)
+# Caption und Label in den letzten Footer der longtable setzen,
+# damit sie unter dem abschliessenden Strich erscheinen.
+tabelle_tex_str <- stringr::str_replace(
+  as.character(tabelle_tex),
+  stringr::fixed("\\endlastfoot"),
+  paste0(
+    "\\caption{Detaillierter Tilgungsplan Privatdarlehen CC}\\label{tab:tilgungsplan}\\\\\n",
+    "\\endlastfoot"
+  )
 )
 
 cat(tabelle_tex_str, file = vollstaendiger_pfad)
+
+# Parameter als LaTeX-Variablen exportieren
+parameter_pfad <- file.path(zielordner, "TilgungsplanParameter.tex")
+cat(paste0(
+  "\\newcommand{\\CCBDarlehen}{",      format_de(darlehen),          "}\n",
+  "\\newcommand{\\CCBZinssatz}{",      zinssatz * 100,               "}\n",
+  "\\newcommand{\\CCBLaufzeit}{",      laufzeit,                     "}\n",
+  "\\newcommand{\\CCBAnnuitaet}{",     format_de(annuitaet),         "}\n",
+  "\\newcommand{\\CCBGesamtzinsen}{",  format_de(sum(plan$Zinsen)),  "}\n",
+  "\\newcommand{\\CCBGesamttilgung}{", format_de(sum(plan$Tilgung)), "}\n"
+), file = parameter_pfad)
