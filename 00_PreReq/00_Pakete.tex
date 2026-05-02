@@ -1,0 +1,266 @@
+%%% =========================================================
+%%% Sprache, Encoding, Fonts
+%%% =========================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+
+%%% =========================================================
+%%% Mathematik & Symbole
+%%% =========================================================
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{dsfont}
+
+%%% =========================================================
+%%% Tabellen, Layout, Farben
+%%% =========================================================
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{ltablex} % Tipp: \keepXColumns nach \begin{document}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{nameref}
+
+%%% =========================================================
+%%% Seitenlayout & Ränder
+%%% =========================================================
+\usepackage[top=2.5cm, bottom=2.5cm, left=2cm, right=2cm, head=17pt]{geometry}
+\usepackage{pdflscape}
+
+%%% =========================================================
+%%% Typografie, Abstände, Absätze
+%%% =========================================================
+\usepackage{microtype}
+\usepackage{setspace} % Verwende \onehalfspacing im Dokumentteil
+\usepackage{blindtext}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{lettrine}
+
+%%% Absatzformatierung
+\titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%%% =========================================================
+%%% Grafiken & Floats
+%%% =========================================================
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+% \usepackage{floatflt} % obsolet -> ggf. durch wrapfig/floatrow ersetzen
+\usepackage{epstopdf}
+\usepackage{float} % statt 'here'; ermöglicht [H]
+
+%%% =========================================================
+%%% Listings / Code
+%%% =========================================================
+\usepackage{listings}
+\usepackage{etoolbox} % für \ifstrempty
+
+%%% =========================================================
+%%% Datum & Zeit
+%%% =========================================================
+\usepackage[ngerman]{datetime2}
+\newcommand{\timestamp}{\DTMcurrenttime}
+\DTMsetdatestyle{ddmmyyyy}
+%\DTMsetup{datesep={.}}
+
+\usepackage{advdate}
+
+
+%%% =========================================================
+%%% Kopf- und Fußzeilen
+%%% =========================================================
+\usepackage[
+  headsepline=0.4pt,
+  footsepline=0.4pt,
+  plainheadsepline,
+  plainfootsepline
+]{scrlayer-scrpage}
+
+\usepackage[
+  stable,    % Fußnoten in Überschriften erlauben
+  multiple,  % Komma zwischen Fußnoten (1,2)
+  perpage,   % Zähler auf jeder Seite bei 1 beginnen
+  bottom     % Fußnoten immer ganz unten fixieren
+]{footmisc}
+
+\usepackage{tablefootnote} % Für Fußnoten in Tabellen
+
+% Fußnote in kleinem römischen Zahlen
+\renewcommand{\thefootnote}{\roman{footnote}}
+
+%%% =========================================================
+%%% Glossare & Akronyme
+%%% =========================================================
+\usepackage[acronym, toc, nomain, section=subsection]{glossaries}
+\usepackage{xparse}
+\makenoidxglossaries
+
+\newglossary*{general}{Glossar}
+
+\NewDocumentCommand{\myacronym}{m m m O{}}{%
+  % Akronym anlegen; Beschreibung in user1 speichern
+  \newacronym[user1={#4}]{#1}{#2}{#3}%
+  % Falls Beschreibung vorhanden → zusätzlichen Glossar-Eintrag im Typ "general"
+  \ifstrempty{#4}{}{%
+    \newglossaryentry{gls-#1}{%
+      type=general,
+      name={#2},
+      description={#3\textemdash\ #4},
+      user1={#4}% wichtig: damit dein Glossar-Style ihn nicht wegfiltert
+    }%
+  }%
+}
+
+%%% ---------------------------------------------------------
+%%% Glossar-Stil: zweispaltig_akk (Abkürzungsverzeichnis)
+%%% ---------------------------------------------------------
+\newglossarystyle{zweispaltig_akk}{%
+  \renewenvironment{theglossary}%
+  {%
+    \renewcommand{\arraystretch}{1.2}%
+    \begin{longtable}{|
+      p{3cm}|
+      p{\dimexpr\textwidth-3cm-4\tabcolsep-3\arrayrulewidth\relax}|
+    }
+    \hline
+  }{%
+    \caption{Abkürzungsverzeichnis}%
+    \label{tab:akronyme}%
+    \\ \end{longtable}
+  }%
+
+  \renewcommand*{\glossaryheader}{%
+    \rowcolor[HTML]{9B9B9B}
+    \textbf{Akronym} & \textbf{Langform} \\ \hline
+    \endhead
+  }%
+
+  \renewcommand*{\glossentry}[2]{%
+    \glstarget{##1}{\glossentryname{##1}} &
+    \glossentrydesc{##1} \\
+    \hline
+  }%
+
+  \renewcommand*{\glsgroupskip}{}%
+}
+
+%%% ---------------------------------------------------------
+%%% Glossar-Stil: glossar_zweispaltig (Glossar)
+%%% ---------------------------------------------------------
+\newglossarystyle{glossar_zweispaltig}{%
+  \renewenvironment{theglossary}%
+  {\renewcommand{\arraystretch}{1.2}%
+   \begin{longtable}{|p{3cm}|p{\dimexpr\textwidth-3cm-4\tabcolsep-3\arrayrulewidth\relax}|} \hline}%
+  {%
+    \caption{Glossar}
+    \label{tab:mein_glossar}
+    \\ \end{longtable}}%
+  \renewcommand*{\glossaryheader}{%
+    \rowcolor[HTML]{9B9B9B}
+    \textbf{Begriff} & \textbf{Erläuterung} \\ \hline \hline \endhead}%
+  % Nur drucken, wenn user1 (=\glsentryuseri) NICHT leer ist:
+  \renewcommand*{\glossentry}[2]{%
+    \ifstrempty{\glsentryuseri{##1}}%
+      {}%
+      {%
+        \glstarget{##1}{\glossentryname{##1}} &
+        {\textit{\glsentryuseri{##1}}} \\ \hline
+      }%
+  }%
+  \renewcommand*{\glsgroupskip}{}%
+}
+
+%%% =========================================================
+%%% Wiederholbare Abbildungs-Liste
+%%% =========================================================
+\usepackage{atveryend}
+
+\makeatletter
+\newcommand\Repeatable@starttoc[1]{%
+  \begingroup
+  \makeatletter
+  \@input{\jobname.#1}%
+  \if@filesw
+    \AfterLastShipout{%
+      \@ifundefined{tf@#1}{%
+        \expandafter\newwrite\csname tf@#1\endcsname
+        \immediate\openout \csname tf@#1\endcsname \jobname.#1\relax
+      }{}%
+    }%
+  \fi
+  \@nobreakfalse
+  \endgroup
+}%
+\newcommand\listoffiguresRepeatable{%
+  \begingroup
+  \let\@starttoc\Repeatable@starttoc
+  \listoffigures
+  \endgroup
+}%
+\makeatother
+
+
+%%% =========================================================
+%%% Datumsrechnerei
+%%% =========================================================
+
+
+%%% =========================================================
+%%% Fußnoten / Endnoten / Kommentare
+%%% =========================================================
+\usepackage{comment}
+
+%%% Endnoten referenzierbar machen
+\usepackage{etoolbox}
+\usepackage{enotez}
+
+\setenotez{
+  list-name      = {Endnoten},
+  totoc          = false,
+  counter-format = {arabic},
+  backref        = true,
+  reset          = true,
+  list-style     = plain
+}
+
+%%% =========================================================
+%%% PDF-Seiten einbinden
+%%% =========================================================
+\usepackage{pdfpages}
+
+%%% =========================================================
+%%% Hyperref (immer vor cleveref)
+%%% =========================================================
+\usepackage[pdfborderstyle={/S/U/W 1}]{hyperref}
+
+%%% =========================================================
+%%% Cleveref (immer nach hyperref!)
+%%% =========================================================
+\usepackage{cleveref}
+
+%%% =========================================================
+%%% PDF-Metadaten
+%%% =========================================================
+\hypersetup{
+    pdftitle={Report Sebastian Seitz - IPMA Level B},
+    pdfauthor={Sebastian Seitz},
+    pdfsubject={Governance, Strukturen und Prozesse},
+    % --- Link-Styling ---
+    colorlinks=true,    % Links einfärben statt Rahmen
+    linkcolor=black,    % Interne Links (Inhaltsverzeichnis, Endnoten)
+    citecolor=black,    % Zitate / Literatur
+    filecolor=black,    % Dateilinks
+    urlcolor=blue,      % Web-Adressen (hier ist Blau sinnvoll)
+    bookmarksnumbered=true
+}
+
+
+\usepackage{fmtcount}

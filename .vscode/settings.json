@@ -1,0 +1,5 @@
+{
+    "latex-workshop.latex.clean.method": "command",
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.formatting.tex-fmt.doNotWrap": false
+}
