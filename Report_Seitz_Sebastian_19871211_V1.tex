@@ -82,13 +82,14 @@
 
 \end{spacing}
 
-\setlength{\parskip}{1em}
+\setlength{\parskip}{0em}
 
 \newpage
 
 %%%%%% Prämbel Report	
 \pagenumbering{arabic}
 \setcounter{SeitenzahlSpeicher}{\value{page}}
+\setcounter{table}{0}
 \input{01_PreAmb/03_02_HeaderFooter2.tex}		% Kopf & Fußzeile2
  
 
@@ -100,6 +101,14 @@
 \input{02_ManagementZusammenfassung/02_04_NeuesProjekt.tex}
 
 %%%%% Beschreibung der Management-Herausforderung
+
+
+\clearpage
+\newpage
+
+%%%%% Onepager Bestandsobjekte
+\section{Bestandsobjekte} \label{sec:Bestandsobjekte}
+\input{04_Onepager_Bestandsobjekte/01_Tannenstrasse5.tex}
 
 
 \label{lastPage2}
@@ -121,7 +130,7 @@
 \begin{spacing}{1}
 \small
 
-\setcounter{table}{0}
+
 
 \addcontentsline{toc}{subsection}{Endnoten}
 \begingroup
