@@ -11,11 +11,10 @@
 \contentsline {paragraph}{\numberline {2.1.0.1}1. Objektsteckbrief}{5}{paragraph.2.1.0.1}%
 \contentsline {paragraph}{\numberline {2.1.0.2}2. Ertragslage und Stabilität (p.a.)}{5}{paragraph.2.1.0.2}%
 \contentsline {paragraph}{\numberline {2.1.0.3}3. Bankrelevante Kennzahlen (stabilisierter Zustand)}{5}{paragraph.2.1.0.3}%
-\contentsline {paragraph}{\numberline {2.1.0.4}4. Herleitung des konservativen Kreditrahmens}{6}{paragraph.2.1.0.4}%
-\contentsline {paragraph}{\numberline {2.1.0.5}5. Risiko- und Sicherheitenprofil}{6}{paragraph.2.1.0.5}%
-\contentsline {paragraph}{\numberline {2.1.0.6}6. Kurzfazit für die Kreditentscheidung}{6}{paragraph.2.1.0.6}%
+\contentsline {paragraph}{\numberline {2.1.0.4}4. Risiko- und Sicherheitenprofil}{6}{paragraph.2.1.0.4}%
+\contentsline {paragraph}{\numberline {2.1.0.5}5. Kurzfazit und Ausblick}{6}{paragraph.2.1.0.5}%
 \contentsline {section}{\numberline {A}Anhang}{A-1}{appendix.A}%
-\contentsline {subsection}{Endnoten}{A-1}{section*.3}%
-\contentsline {subsection}{Abkürzungsverzeichnis}{A-2}{section*.4}%
-\contentsline {subsection}{Grafiken}{A-4}{table.3}%
-\contentsline {subsection}{Tabellen}{A-5}{figure.caption.5}%
+\contentsline {subsection}{Endnoten}{A-1}{section*.5}%
+\contentsline {subsection}{Abkürzungsverzeichnis}{A-2}{section*.6}%
+\contentsline {subsection}{Grafiken}{A-4}{table.5}%
+\contentsline {subsection}{Tabellen}{A-5}{figure.caption.7}%

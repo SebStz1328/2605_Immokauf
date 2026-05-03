@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.5.2)  2 MAY 2026 19:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.5.2)  3 MAY 2026 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1142,22 +1142,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
 
 {C:/Users/sebse/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./98_Pictures/Original Logo.png>]) (Report_Seitz_Sebastian_19871211_V1.toc
-Overfull \hbox (0.36496pt too wide) detected at line 18
+Overfull \hbox (0.36496pt too wide) detected at line 17
  []\T1/lmr/m/n/10.95 A-1
  []
 
 
-Overfull \hbox (0.36496pt too wide) detected at line 19
+Overfull \hbox (0.36496pt too wide) detected at line 18
  []\T1/lmr/m/n/10.95 A-2
  []
 
 
-Overfull \hbox (0.36496pt too wide) detected at line 20
+Overfull \hbox (0.36496pt too wide) detected at line 19
  []\T1/lmr/m/n/10.95 A-4
  []
 
 
-Overfull \hbox (0.36496pt too wide) detected at line 21
+Overfull \hbox (0.36496pt too wide) detected at line 20
  []\T1/lmr/m/n/10.95 A-5
  []
 
@@ -1175,12 +1175,12 @@ Overfull \hbox (0.36496pt too wide) detected at line 2
 \openout6 = `Report_Seitz_Sebastian_19871211_V1.lof'.
 
  (Report_Seitz_Sebastian_19871211_V1.lot
-Overfull \hbox (0.36496pt too wide) detected at line 4
+Overfull \hbox (0.36496pt too wide) detected at line 6
  []\T1/lmr/m/n/10.95 A-2
  []
 
 
-Overfull \hbox (0.36496pt too wide) detected at line 5
+Overfull \hbox (0.36496pt too wide) detected at line 7
  []\T1/lmr/m/n/10.95 A-6
  []
 
@@ -1226,7 +1226,7 @@ Package glossaries Info: Preparing to sort glossary `acronym' (total number of
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={general}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 157.
 
 [3] (90_Anhang/91_Grafikenanhang.tex
-<98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf, id=156, page=1, 597.23125pt x 845.1575pt>
+<98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf, id=174, page=1, 597.23125pt x 845.1575pt>
 File: 98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf Graphic file (type pdf)
 <use 98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf, page 1>
 Package pdftex.def Info: 98_Pictures/BY-Nürnberg_HRA_19680+AD-20260502081208.pdf , page1 used on input line 3.
@@ -1241,21 +1241,24 @@ L3 programming layer <2025-12-24>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Report_Seitz_Sebastian_19871211_V1.out' has not changed.
-(rerunfilecheck)             Checksum: B3AB4BBE21CB5E000FA757AF1DB69EFD;1636.
+(rerunfilecheck)             Checksum: B199A96AE947850CCE900C9527F69364;1636.
  ) 
 Here is how much of TeX's memory you used:
- 42899 strings out of 467871
- 903953 string characters out of 5418383
+ 42953 strings out of 467871
+ 904608 string characters out of 5418383
  1640720 words of memory out of 5000000
- 70881 multiletter control sequences out of 15000+600000
- 695400 words of font info for 156 fonts, out of 8000000 for 9000
+ 70893 multiletter control sequences out of 15000+600000
+ 705745 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,20n,124p,2637b,1266s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb>
-Output written on Report_Seitz_Sebastian_19871211_V1.pdf (14 pages, 352648 bytes).
+ 128i,20n,124p,2637b,1264s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/sebse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb>
+Output written on Report_Seitz_Sebastian_19871211_V1.pdf (14 pages, 391655 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 39019 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 45163 words of extra memory for PDF output out of 51595 (max. 10000000)
 
